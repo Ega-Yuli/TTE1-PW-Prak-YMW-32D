@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Dokumen Tugas TTE-1</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #fff7f0;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+
+    .header-kuliah {
+      background-color: #fdebd0;
+      padding: 15px 30px;
+      border-bottom: 2px solid #f39c12;
+      text-align: center;
+      font-style: italic;
+      font-weight: bold;
+    }
+
+    nav {
+      background-color: #f7dc6f;
+      padding: 15px;
+      text-align: center;
+    }
+
+    nav button {
+      margin: 0 10px;
+      padding: 10px 20px;
+      background-color: #f39c12;
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .container {
+      display: none;
+      background-color: #ffffff;
+      margin: 30px auto;
+      max-width: 750px;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .container.active {
+      display: block;
+    }
+
+    h1 {
+      color: #f39c12;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    .subheading {
+      text-align: center;
+      color: #2980b9;
+      margin-bottom: 10px;
+      font-size: 1.1em;
+    }
+
+    .highlight, .info, .tutorial {
+      padding: 15px;
+      border-left: 6px solid;
+      border-radius: 6px;
+      margin-bottom: 20px;
+    }
+
+    .highlight {
+      background-color: #fef5e7;
+      border-color: #f39c12;
+    }
+
+    .info {
+      background-color: #d6eaf8;
+      border-color: #5dade2;
+    }
+
+    .tutorial {
+      background-color: #fcf3cf;
+      border-color: #f7dc6f;
+    }
+
+    .footer {
+      margin-top: 40px;
+      text-align: center;
+      font-size: 0.9em;
+      color: #555;
+    }
+
+    video, iframe, img {
+      display: block;
+      margin: 20px auto;
+      max-width: 100%;
+      border-radius: 10px;
+    }
+
+    p {
+      text-align: justify;
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header-kuliah">
+    Dibuat untuk keperluan tugas kuliah TTE1, untuk mata kuliah Praktikum Pemrograman Web.<br>
+    Nama: Yuli Megawati, NIM: 231110015
+  </div>
+
+  <nav>
+    <button onclick="showPage('page1')">📢 Pengumuman</button>
+    <button onclick="showPage('page2')">🎬 Tentang Film Jumbo</button>
+    <button onclick="showPage('page3')">📄 Pernyataan Tugas</button>
+  </nav>
+
+  <!-- Halaman 1 -->
+  <div class="container active" id="page1">
+    <h1>🎬 Ayo Nonton Film Jumbo Gratis!</h1>
+    <div class="subheading">📍 Lokasi: Ruang Serbaguna Lantai 5</div>
+    <div class="subheading">🕖 Waktu: Jumat, 18 April 2025 | Pukul 19.00 WIB</div>
+    <div class="subheading">👗 Dresscode: Casual Elegan (bebas rapi & santai)</div>
+
+    <div class="highlight">
+      Kami mengundang seluruh tim untuk bersama-sama menikmati malam santai dengan nonton bareng film "Jumbo" secara GRATIS! Jangan lupa kenakan dresscode yang telah ditentukan dan hadir tepat waktu.
+    </div>
+
+    <div class="info">
+      🎟️ Tiket dapat diambil di Ruang HRD mulai dari tanggal <strong>15 April s.d 17 April 2025</strong>, pukul <strong>09:00 – 16:00 WIB</strong>. <br><br>
+      📌 Tiket terbatas! Siapa cepat dia dapat~
+    </div>
+
+    <div class="tutorial">
+      <strong>📺 Cuplikan Film Jumbo:</strong><br>
+      <video controls>
+        <source src="Jumbo_Video.mp4" type="video/mp4">
+        Maaf, browser Anda tidak mendukung pemutaran video.
+      </video>
+    </div>
+
+    <div class="footer">
+      Jangan sampai ketinggalan malam seru penuh tawa dan kehangatan bersama tim! 🍿✨
+    </div>
+  </div>
+
+  <!-- Halaman 2 -->
+  <div class="container" id="page2">
+    <h1>✨ Mengapa Harus Nonton Film Jumbo?</h1>
+
+    <p>
+      Film "Jumbo" bukan sekadar tontonan biasa. Ini adalah kisah menyentuh yang membahas pentingnya menerima perbedaan, kekuatan ikatan emosional, dan bagaimana cinta bisa tumbuh dari tempat yang tidak terduga. Film ini sarat makna dan cocok ditonton bersama teman-teman kantor untuk momen kebersamaan yang tak terlupakan.
+    </p>
+
+    <p>
+      Selain menyajikan cerita yang unik, film ini juga menampilkan sinematografi yang cantik dan akting luar biasa dari para pemainnya. Kombinasi humor, drama, dan kehangatan menjadikannya pilihan sempurna untuk mengisi malam kebersamaan.
+    </p>
+
+    <img src="Jumbo.jpg" alt="Cuplikan Film Jumbo">
+    <img src="Jumbo1.jpg" alt="Momen Mengharukan Jumbo">
+    <img src="Jumbo2.jpg" alt="Karakter Utama Jumbo">
+
+    <div class="footer">
+      Siapkan popcornmu, dan mari kita rasakan petualangan emosional yang luar biasa! 🎬
+    </div>
+  </div>
+
+  <!-- Halaman 3 -->
+  <div class="container" id="page3">
+    <h1>📄 Pernyataan Tugas Praktikum</h1>
+    <p>
+      Dengan ini saya menyatakan bahwa saya telah menyelesaikan Tugas Praktikum Pemrograman Web untuk mata kuliah TTE-1 dengan sebaik-baiknya.
+    </p>
+    <p>
+      Segala kode HTML, CSS, dan elemen tambahan dalam tugas ini merupakan hasil kerja saya sendiri sebagai bagian dari proses pembelajaran.
+    </p>
+
+    <iframe src="TTE1 Pemrograman WEB (Prak).pdf"></iframe>
+
+    <div class="footer">
+      Terima kasih kepada dosen pengampu atas bimbingannya. Semoga tugas ini dapat dinilai dengan hasil yang maksimal.
+    </div>
+  </div>
+
+  <script>
+    function showPage(id) {
+      const pages = document.querySelectorAll('.container');
+      pages.forEach(page => {
+        page.classList.remove('active');
+      });
+      document.getElementById(id).classList.add('active');
+    }
+  </script>
+
+</body>
+</html>
